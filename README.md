@@ -22,7 +22,7 @@
 
 <br>
 
-<img src="https://via.placeholder.com/1000x450/2563EB/FFFFFF?text=SIGRH+-+Sistema+Integrado+de+Gest%C3%A3o+de+Recursos+Humanos" alt="SIGRH Dashboard" width="100%"/>
+
 
 </div>
 
