@@ -1,835 +1,474 @@
-<div align="center">
+ <div align="center">
 
-# 👥 SIGRH
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=005C84&height=200&section=header&text=👥%20SIGRH&fontSize=48&fontColor=ffffff&fontAlignY=35" width="100%" alt="SIGRH - Sistema Integrado de Gestão de Recursos Humanos" />
 
-## Sistema Integrado de Gestão de Recursos Humanos
+  <h2>Sistema Integrado de Gestão de Recursos Humanos</h2>
 
-<p>
-  Sistema web moderno para gestão integrada de funcionários, férias, folha de pagamento, formações, notificações e processos administrativos.
-</p>
+  <p align="center">
+    <b>Sistema web desenvolvido em Java para a gestão integrada, moderna e eficiente dos recursos humanos de uma organização.</b>
+  </p>
 
-<p>
-  Desenvolvido com tecnologias Java para oferecer uma solução robusta, segura e escalável para a gestão de Recursos Humanos.
-</p>
+  <p align="center">
+    <a href="#-sobre-o-projeto">Sobre</a> •
+    <a href="#-funcionalidades">Funcionalidades</a> •
+    <a href="#-tecnologias-utilizadas">Tecnologias</a> •
+    <a href="#-estrutura-do-projeto">Estrutura</a> •
+    <a href="#-como-executar">Como Executar</a> •
+    <a href="#-autores">Autor</a>
+  </p>
 
-<br>
-
-[![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge\&logo=openjdk\&logoColor=white)](https://adoptium.net/)
-[![Jakarta EE](https://img.shields.io/badge/Jakarta%20EE-10-007396?style=for-the-badge\&logo=jakartaee\&logoColor=white)](https://jakarta.ee/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)](https://www.mysql.com/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge\&logo=bootstrap\&logoColor=white)](https://getbootstrap.com/)
-[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
-
-<br>
-
-
+  <p align="center">
+    <img src="https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 17+" />
+    <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+    <img src="https://img.shields.io/badge/Jakarta%20EE-1B6AC6?style=for-the-badge&logo=eclipseide&logoColor=white" alt="Jakarta EE" />
+    <img src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black" alt="Apache Tomcat" />
+    <img src="https://img.shields.io/badge/Arquitetura-MVC-8A2BE2?style=for-the-badge" alt="MVC" />
+  </p>
 
 </div>
 
 ---
 
-# 📌 Índice
+## 📌 Sobre o Projeto
 
-* [📖 Sobre o Projeto](#-sobre-o-projeto)
-* [🚀 Funcionalidades](#-funcionalidades)
-* [🛠️ Tecnologias](#️-tecnologias-utilizadas)
-* [📁 Estrutura do Projeto](#-estrutura-do-projeto)
-* [⚙️ Pré-requisitos](#️-pré-requisitos)
-* [🚀 Instalação](#-instalação-e-configuração)
-* [👤 Perfis de Utilizador](#-perfis-de-utilizador)
-* [📦 Módulos](#-módulos-do-sistema)
-* [📡 API](#-api-endpoints)
-* [📸 Screenshots](#-screenshots)
-* [🤝 Contribuição](#-contribuição)
-* [📄 Licença](#-licença)
-* [📞 Contacto](#-contacto)
+O **SIGRH — Sistema Integrado de Gestão de Recursos Humanos** é uma aplicação web desenvolvida em **Java**, utilizando tecnologias como **Jakarta EE, JSP, Servlets, MySQL e Apache Tomcat**, seguindo uma organização baseada no padrão arquitetural **MVC (Model-View-Controller)**.
 
----
+O sistema foi concebido para centralizar e facilitar os principais processos relacionados à gestão de recursos humanos, permitindo organizar informações dos funcionários, acompanhar férias, gerir a folha de pagamento, administrar formações e controlar diferentes processos administrativos.
 
-# 📖 Sobre o Projeto
+A plataforma procura melhorar a organização dos dados, facilitar o acesso à informação e apoiar as atividades dos departamentos de Recursos Humanos, Gestão e Finanças.
 
-O **SIGRH — Sistema Integrado de Gestão de Recursos Humanos** é uma aplicação web desenvolvida para centralizar e automatizar os principais processos de gestão de pessoas dentro de uma organização.
+### 🎯 Objetivos
 
-O sistema foi projetado para oferecer uma experiência moderna, intuitiva, responsiva e segura, permitindo que diferentes perfis de utilizadores tenham acesso às funcionalidades de acordo com as suas permissões.
-
-### 🎯 Principais objetivos
-
-* 👥 Centralizar a gestão de funcionários
-* 🏖️ Automatizar processos de férias
-* 💰 Gerir a folha de pagamento
-* 📚 Controlar formações e qualificações
-* 📊 Gerar relatórios administrativos e financeiros
-* 🔔 Enviar notificações aos utilizadores
-* 🔐 Garantir segurança e controlo de acessos
-* 📋 Registar ações através de auditoria
+- Centralizar as informações dos funcionários numa única plataforma.
+- Automatizar os processos administrativos de Recursos Humanos.
+- Facilitar a gestão de férias e ausências.
+- Organizar informações relacionadas com salários e pagamentos.
+- Melhorar o acompanhamento das formações dos funcionários.
+- Controlar o acesso às funcionalidades de acordo com o perfil do utilizador.
+- Melhorar a organização, a integridade e a consulta dos dados.
 
 ---
 
-# 🚀 Funcionalidades
+## ✨ Funcionalidades
 
-## 👥 Gestão de Funcionários
+### 👥 Gestão de Funcionários e Acesso
 
-* Cadastro de funcionários
-* Edição e atualização de dados
-* Gestão de dados pessoais
-* Upload de fotografia do funcionário
-* Gestão de agregados familiares
-* Formação académica e profissional
-* Histórico de cargos e nomeações
-* Pesquisa e filtros avançados
-* Controlo de estado do funcionário
+- 👤 **Gestão de Funcionários**
+  - Registo e consulta de funcionários.
+  - Atualização dos dados pessoais e profissionais.
+  - Organização das informações dos colaboradores.
+  - Consulta de informações e histórico profissional.
+
+- 🔐 **Autenticação e Controlo de Acesso**
+  - Sistema de autenticação por utilizador.
+  - Gestão de sessões.
+  - Controlo de permissões por perfil.
+  - Restrição de acesso às áreas protegidas.
+
+- 🏢 **Gestão Administrativa**
+  - Organização de processos administrativos.
+  - Gestão de informações profissionais.
+  - Acompanhamento de atos e registos administrativos.
+
+### 🏖️ Gestão de Férias e Ausências
+
+- 📅 **Gestão de Férias**
+  - Registo e consulta de pedidos de férias.
+  - Validação dos períodos solicitados.
+  - Controlo das datas de início e fim.
+  - Aprovação ou rejeição dos pedidos pelos responsáveis.
+  - Acompanhamento dos dias de férias disponíveis.
+  - Consideração dos dias de férias transitados de anos anteriores, conforme as regras do sistema.
+
+- ⏱️ **Controlo de Datas**
+  - Validação das datas introduzidas nos formulários.
+  - Verificação da coerência entre datas de início e fim.
+  - Prevenção de períodos inválidos.
+  - Aplicação das regras de negócio aos pedidos de férias.
+
+### 💰 Gestão Financeira e Salarial
+
+- 💵 **Gestão Salarial**
+  - Organização de informações salariais.
+  - Consulta de registos relacionados com salários.
+  - Apoio ao controlo administrativo da remuneração dos funcionários.
+
+- 📊 **Gestão Financeira**
+  - Consulta de informações para apoio à gestão.
+  - Organização dos dados financeiros disponíveis.
+  - Apoio aos processos administrativos relacionados com pagamentos.
+
+### 🎓 Gestão de Formações
+
+- 📚 **Formação dos Funcionários**
+  - Registo de informações sobre formações.
+  - Organização dos dados de capacitação profissional.
+  - Consulta do histórico de formação, conforme as funcionalidades implementadas.
+
+### 📈 Relatórios e Consultas
+
+- Consulta de informações dos funcionários.
+- Acompanhamento dos registos de férias.
+- Consulta de informações salariais.
+- Apoio à análise administrativa.
+- Disponibilização de dados para acompanhamento da gestão dos recursos humanos.
 
 ---
 
-## 🏖️ Gestão de Férias
+## 🛠️ Tecnologias Utilizadas
 
-* Solicitação de férias pelo funcionário
-* Aprovação ou rejeição de solicitações
-* Gestão do plano anual de férias
-* Calendário visual
-* Controlo do saldo de férias
-* Check-in e Check-out
-* Cancelamento de solicitações
-* Acompanhamento do histórico de férias
+| Tecnologia | Função |
+|---|---|
+| ☕ **Java 17+** | Linguagem principal do sistema |
+| 🌐 **Jakarta EE 10** | Plataforma para desenvolvimento de aplicações web empresariais |
+| 📄 **JSP** | Construção de páginas web dinâmicas |
+| ⚙️ **Servlets** | Processamento de requisições e controlo da aplicação |
+| 🏗️ **MVC** | Organização da lógica, dos dados e da interface |
+| 🗄️ **MySQL 8+** | Sistema de gestão da base de dados |
+| 🔌 **JDBC** | Comunicação entre Java e MySQL |
+| 🐱 **Apache Tomcat** | Servidor web e de execução da aplicação |
+| 🎨 **HTML5** | Estrutura das páginas |
+| 🎨 **CSS3** | Estilização da interface |
+| ⚡ **JavaScript** | Interatividade no frontend |
+| 🅱️ **Bootstrap** | Construção de interfaces responsivas |
+| 🔐 **Sessões e filtros** | Apoio à autenticação e ao controlo de acesso |
 
 ---
 
-## 💰 Folha de Pagamento
+## 📁 Estrutura do Projeto
 
-* Processamento mensal da folha
-* Gestão de salários
-* Cálculo de impostos e descontos
-* Gestão de subsídios
-* Histórico de pagamentos
-* Estados da folha de pagamento
+A estrutura abaixo representa uma organização de referência para o projeto. Os nomes concretos dos diretórios e ficheiros podem variar de acordo com a versão existente no repositório.
+
+<details>
+<summary>👉 <b>Clique aqui para expandir a árvore de diretórios</b></summary>
 
 ```text
-PENDENTE
-   ↓
-PROCESSADO
-   ↓
-PAGO
-```
-
-* Relatórios financeiros
-* Consulta de detalhes da folha
-
----
-
-## 📚 Gestão de Formações
-
-* Registo de formações
-* Histórico académico e profissional
-* Gestão de qualificações
-* Associação de formações aos funcionários
-* Consulta e filtros
-
----
-
-## 🔔 Sistema de Notificações
-
-* Notificações em tempo real
-* Contador de notificações não lidas
-* Marcação individual como lida
-* Marcação de todas como lidas
-* Diferentes tipos de notificações
-
-```text
-ℹ️ INFO
-✅ SUCESSO
-⚠️ AVISO
-❌ ERRO
-```
-
-Exemplos de eventos:
-
-* Login realizado
-* Solicitação de férias
-* Aprovação ou rejeição
-* Processamento da folha
-* Nova formação
-* Atualizações importantes
-
----
-
-## 📊 Dashboard
-
-O sistema possui dashboards personalizados de acordo com o perfil do utilizador.
-
-### Funcionalidades
-
-* 📈 Estatísticas em tempo real
-* 👥 Total de funcionários
-* 🏖️ Funcionários em férias
-* 📋 Solicitações pendentes
-* 💰 Informações financeiras
-* 📊 Gráficos interativos
-* 🔔 Últimas atividades
-
----
-
-## 📈 Relatórios
-
-O SIGRH permite gerar relatórios relacionados com:
-
-* Funcionários por setor
-* Estado dos funcionários
-* Férias
-* Formações
-* Nomeações
-* Informações financeiras
-* Folha de pagamento
-
-### Exportação
-
-* 📄 PDF
-* 📊 Excel
-
----
-
-## 🔐 Segurança
-
-A segurança é uma das principais características do sistema.
-
-### Recursos implementados
-
-* 🔑 Autenticação de utilizadores
-* 🔒 Senhas protegidas com BCrypt
-* 📧 Recuperação de senha por e-mail
-* 👤 Controlo de acesso por perfil
-* 🛡️ Gestão de sessão
-* 📝 Auditoria das ações
-* 🚫 Restrição de páginas não autorizadas
-
----
-
-# 🛠️ Tecnologias Utilizadas
-
-## ⚙️ Backend
-
-| Tecnologia         | Versão | Descrição                     |
-| ------------------ | ------ | ----------------------------- |
-| ☕ Java             | 17+    | Linguagem principal           |
-| 🌐 Jakarta EE      | 10     | Plataforma empresarial        |
-| 🔗 Jakarta Servlet | 6.0    | Desenvolvimento de Servlets   |
-| 📄 JSP             | 3.1    | Interface dinâmica            |
-| 🗄️ JDBC           | —      | Comunicação com base de dados |
-| 🐬 MySQL Connector | 8.0+   | Driver MySQL                  |
-| 🔐 BCrypt          | 0.4    | Hash de senhas                |
-| 📦 GSON            | 2.10+  | Manipulação de JSON           |
-| 📝 Log4j           | 2.20+  | Sistema de logs               |
-
----
-
-## 🎨 Frontend
-
-| Tecnologia      | Descrição             |
-| --------------- | --------------------- |
-| 🌐 HTML5        | Estrutura das páginas |
-| 🎨 CSS3         | Estilização           |
-| ⚡ JavaScript    | Interatividade        |
-| 🅱️ Bootstrap 5 | Framework CSS         |
-| 🎯 Font Awesome | Ícones                |
-| 📊 Chart.js     | Gráficos              |
-| 🔤 Google Fonts | Tipografia            |
-
----
-
-## 🗄️ Base de Dados
-
-* **MySQL 8.0+**
-* Modelo relacional
-* Integridade referencial
-* Chaves estrangeiras
-* Índices otimizados
-* Estrutura organizada para escalabilidade
-
----
-
-# 📁 Estrutura do Projeto
-
-```text
-sigrh/
+SIGRH/
 │
 ├── src/
 │   └── main/
-│
+│       │
 │       ├── java/
-│       │   └── com/sigrh/
-│       │
-│       │       ├── controller/
-│       │       │   └── Servlets e Controllers
-│       │
-│       │       ├── model/
-│       │       │   └── Entidades do sistema
-│       │
-│       │       ├── dao/
-│       │       │   └── Acesso à base de dados
-│       │
-│       │       ├── service/
-│       │       │   └── Regras de negócio
-│       │
-│       │       ├── filter/
-│       │       │   └── Filtros e autenticação
-│       │
-│       │       ├── exception/
-│       │       │   └── Exceções personalizadas
-│       │
-│       │       └── util/
-│       │           └── Classes utilitárias
-│       │
-│       ├── resources/
-│       │   ├── db.properties
-│       │   └── database/
-│       │       └── schema.sql
+│       │   └── com/
+│       │       └── sigrh/
+│       │           │
+│       │           ├── config/
+│       │           │   └── # Configurações da aplicação
+│       │           │
+│       │           ├── controller/
+│       │           │   └── # Servlets e controlo das requisições
+│       │           │
+│       │           ├── dao/
+│       │           │   └── # Acesso e operações na base de dados
+│       │           │
+│       │           ├── filter/
+│       │           │   └── # Filtros de autenticação e autorização
+│       │           │
+│       │           ├── model/
+│       │           │   └── # Entidades e modelos de dados
+│       │           │
+│       │           └── util/
+│       │               └── # Classes e métodos utilitários
 │       │
 │       └── webapp/
-│
-│           ├── WEB-INF/
-│           │   └── views/
 │           │
-│           │       ├── admin/
-│           │       ├── rh/
-│           │       ├── gestor/
-│           │       ├── financeiro/
-│           │       ├── funcionario/
-│           │       ├── auth/
-│           │       └── layout/
+│           ├── WEB-INF/
+│           │   └── # Configurações internas da aplicação
 │           │
 │           ├── css/
+│           │   └── # Folhas de estilo
+│           │
 │           ├── js/
-│           └── uploads/
+│           │   └── # Scripts JavaScript
+│           │
+│           ├── uploads/
+│           │   └── # Ficheiros enviados, se aplicável
+│           │
+│           └── *.jsp
+│               # Páginas da aplicação
+│
+├── database/
+│   └── # Scripts SQL, se existentes
+│
+├── db.properties
+│   # Configurações da ligação à base de dados
 │
 ├── pom.xml
+│   # Dependências e configurações do Maven
 │
 └── README.md
+    # Documentação do projeto
 ```
 
----
-
-# ⚙️ Pré-requisitos
-
-Antes de executar o projeto, certifique-se de ter instalado:
-
-| Software         | Versão |
-| ---------------- | ------ |
-| ☕ Java JDK       | 17+    |
-| 🐱 Apache Tomcat | 10+    |
-| 🐬 MySQL         | 8.0+   |
-| 📦 Maven         | 3.8+   |
-| 🌳 Git           | 2.0+   |
-
-### Links úteis
-
-* [Java / Adoptium](https://adoptium.net/)
-* [Apache Tomcat](https://tomcat.apache.org/)
-* [MySQL](https://www.mysql.com/)
-* [Apache Maven](https://maven.apache.org/)
-* [Git](https://git-scm.com/)
+</details>
 
 ---
 
-# 🚀 Instalação e Configuração
+## ⚙️ Como Executar
 
-## 1️⃣ Clonar o Repositório
+### 📋 Pré-requisitos
+
+Antes de executar o sistema, certifique-se de que tem instalado:
+
+- ☕ **Java JDK 17 ou superior**
+- 🐱 **Apache Tomcat compatível com Jakarta EE 10**
+- 🗄️ **MySQL Server 8 ou superior**
+- 📦 **Apache Maven**
+- 💻 **Eclipse IDE for Enterprise Java and Web Developers**, IntelliJ IDEA ou IDE compatível
+- 🌐 Um navegador web atualizado
+
+> **Nota:** O projeto utiliza Jakarta EE 10. Confirme a versão do Tomcat e as dependências configuradas no `pom.xml` antes de executar a aplicação.
+
+### 🚀 1. Clonar o Repositório
+
+Abra o terminal e execute:
 
 ```bash
-git clone https://github.com/Renildooficial/sigrh.git
+git clone https://github.com/Renildooficial/SIGRH.git
 ```
 
 Entre na pasta do projeto:
 
 ```bash
-cd sigrh
+cd SIGRH
 ```
 
----
+> Se o repositório tiver outro nome ou endereço, substitua o URL pelo endereço correto do projeto.
 
-## 2️⃣ Configurar a Base de Dados
+### 📥 2. Importar o Projeto na IDE
 
-Crie a base de dados:
-
-```sql
-CREATE DATABASE sigrh
-CHARACTER SET utf8mb4
-COLLATE utf8mb4_unicode_ci;
-```
-
-Depois importe o ficheiro:
-
-```bash
-mysql -u root -p sigrh < src/main/resources/database/schema.sql
-```
-
----
-
-## 3️⃣ Configurar a Ligação à Base de Dados
-
-Configure o ficheiro:
+No Eclipse, siga os passos:
 
 ```text
-src/main/resources/db.properties
+File
+   ↓
+Import
+   ↓
+Maven
+   ↓
+Existing Maven Projects
 ```
 
-Exemplo:
+Selecione a pasta do projeto e clique em **Finish**.
+
+Aguarde o Maven descarregar e configurar as dependências.
+
+### 🗄️ 3. Criar a Base de Dados
+
+Abra o MySQL Workbench, phpMyAdmin ou outro cliente MySQL.
+
+Utilize o script SQL disponibilizado no projeto, caso exista.
+
+A base de dados utilizada pelo sistema é:
+
+```text
+sigrh
+```
+
+Se o projeto possuir um ficheiro SQL com outro nome, verifique o conteúdo antes de o importar para evitar conflitos com bases de dados existentes.
+
+### 🔐 4. Configurar a Ligação com o MySQL
+
+Localize o ficheiro `db.properties` e configure os parâmetros de ligação de acordo com o ambiente local.
+
+Exemplo ilustrativo:
 
 ```properties
-db.url=jdbc:mysql://localhost:3306/sigrh?useSSL=false&serverTimezone=Africa/Maputo
-db.username=root
+db.url=jdbc:mysql://localhost:3306/sigrh
+db.user=root
 db.password=sua_senha
 ```
 
-> ⚠️ Nunca publique palavras-passe reais no GitHub.
+> ⚠️ Os nomes das propriedades devem corresponder aos que são utilizados pela classe de conexão do projeto. Não publique palavras-passe reais no repositório.
 
----
+### 🐱 5. Configurar o Apache Tomcat
 
-## 4️⃣ Compilar o Projeto
+Na IDE, abra a vista **Servers** e adicione uma instalação do Apache Tomcat compatível com as dependências do sistema.
+
+Associe o projeto ao servidor e confirme que a configuração de execução está correta.
+
+### ▶️ 6. Executar o Sistema
+
+No Eclipse, clique com o botão direito sobre o projeto e selecione:
+
+```text
+Run As
+   ↓
+Run on Server
+```
+
+Selecione o servidor configurado e aguarde o arranque da aplicação.
+
+Em alternativa, se o projeto estiver configurado para gerar um ficheiro WAR, poderá construí-lo através do Maven:
 
 ```bash
 mvn clean package
 ```
 
----
+O ficheiro gerado poderá ser implantado no servidor, de acordo com a configuração do projeto.
 
-## 5️⃣ Fazer Deploy no Tomcat
+### 🌐 7. Aceder à Aplicação
 
-Copie o ficheiro `.war` gerado:
+Depois de o servidor iniciar, abra o navegador e aceda ao endereço correspondente à configuração local.
 
-```text
-target/sigrh.war
-```
-
-Para a pasta:
+Exemplo:
 
 ```text
-tomcat/webapps/
+http://localhost:8080/SIGRH/
 ```
+
+> 💡 O endereço, a porta e o caminho inicial dependem da configuração do Tomcat e do nome do contexto da aplicação.
 
 ---
 
-## 6️⃣ Iniciar o Tomcat
+## 🏗️ Arquitetura do Sistema
 
-### Windows
-
-```bash
-startup.bat
-```
-
-### Linux / macOS
-
-```bash
-./startup.sh
-```
-
----
-
-## 7️⃣ Aceder ao Sistema
-
-Abra o navegador:
+O SIGRH organiza as responsabilidades da aplicação segundo o padrão **MVC (Model-View-Controller)**, complementado pelo acesso à base de dados através de classes DAO, quando aplicável.
 
 ```text
-http://localhost:8080/sigrh
+                 ┌──────────────────────┐
+                 │      Utilizador      │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │         View         │
+                 │     JSP / HTML       │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │      Controller      │
+                 │       Servlets       │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │        Model         │
+                 │   Entidades / Regras │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │         DAO          │
+                 │         JDBC         │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │        MySQL         │
+                 │      Database        │
+                 └──────────────────────┘
 ```
 
----
-
-# 👤 Perfis de Utilizador
-
-## 🔴 ADMIN
-
-Administrador do sistema.
-
-### Permissões
-
-* Acesso total
-* Gestão de utilizadores
-* Configurações
-* Auditoria
-* Relatórios
-* Gestão de todos os módulos
-
----
-
-## 🟢 RH
-
-Recursos Humanos.
-
-### Permissões
-
-* Gestão de funcionários
-* Gestão de formações
-* Gestão de nomeações
-* Gestão de férias
-* Plano anual de férias
-* Relatórios de RH
-
----
-
-## 🟡 GESTOR
-
-Gestor ou responsável por funcionários.
-
-### Permissões
-
-* Visualização de funcionários
-* Aprovação de solicitações
-* Gestão do plano de férias
-* Relatórios gerenciais
-
----
-
-## 🟣 FINANCEIRO
-
-Responsável pela área financeira.
-
-### Permissões
-
-* Dashboard financeiro
-* Processamento da folha
-* Gestão de salários
-* Gestão de pagamentos
-* Relatórios financeiros
-
----
-
-## 🔵 FUNCIONÁRIO
-
-Funcionário da organização.
-
-### Permissões
-
-* Visualizar os próprios dados
-* Solicitar férias
-* Consultar saldo de férias
-* Consultar formações
-* Consultar nomeações
-* Alterar palavra-passe
-
----
-
-# 📦 Módulos do Sistema
-
-## 🔐 Autenticação
+### 🔄 Fluxo básico
 
 ```text
-/auth
-```
-
-Principais funcionalidades:
-
-* Login
-* Logout
-* Recuperação de senha
-* Recuperação através de código
-* Controlo de sessão
-
----
-
-## 📊 Dashboard
-
-```text
-/dashboard
-```
-
-Funcionalidades:
-
-* Estatísticas
-* Gráficos
-* Informações em tempo real
-* Dashboard personalizado por perfil
-
----
-
-## 👥 Funcionários
-
-```text
-/funcionarios
-```
-
-Funcionalidades:
-
-```text
-GET     /                 → Listar funcionários
-GET     /novo             → Novo funcionário
-POST    /                 → Guardar funcionário
-GET     /editar/{id}      → Editar funcionário
-POST    /excluir          → Excluir funcionário
-POST    /alterar-status   → Alterar estado
+Utilizador
+    ↓
+Página JSP
+    ↓
+Servlet
+    ↓
+Regras de negócio
+    ↓
+DAO / JDBC
+    ↓
+Base de dados MySQL
+    ↓
+DAO
+    ↓
+Servlet
+    ↓
+Página JSP
+    ↓
+Utilizador
 ```
 
 ---
 
-## 🏖️ Férias
+## 🔒 Segurança
 
-```text
-/ferias
-```
+A segurança é um componente importante na gestão dos recursos humanos, uma vez que o sistema pode tratar dados pessoais, profissionais e salariais.
 
-Funcionalidades:
+Entre os mecanismos considerados na aplicação estão:
 
-```text
-GET     /              → Listar solicitações
-GET     /pendentes     → Solicitações pendentes
-POST    /solicitar     → Nova solicitação
-POST    /aprovar       → Aprovar férias
-POST    /rejeitar      → Rejeitar férias
-POST    /checkout      → Iniciar férias
-POST    /checkin       → Finalizar férias
-POST    /cancelar      → Cancelar solicitação
-```
+- 🔐 Autenticação de utilizadores.
+- 👤 Gestão de sessões.
+- 🛡️ Filtros para controlo de acesso.
+- 🔑 Permissões associadas aos perfis dos utilizadores.
+- 🚫 Restrição de acesso às funcionalidades autorizadas.
+- 🗄️ Acesso estruturado à base de dados.
+- 🔒 Proteção das credenciais de ligação.
+
+Os mecanismos efetivamente disponíveis dependem da implementação e da configuração da versão do sistema.
 
 ---
 
-## 💰 Financeiro
+## 👤 Perfis de Utilizador
 
-```text
-/financeiro
-```
+O sistema está orientado para a gestão de diferentes responsabilidades organizacionais, de acordo com os perfis configurados na aplicação.
 
-Funcionalidades:
+| Perfil | Responsabilidade |
+|---|---|
+| 👨‍💼 **Administrador** | Gestão geral e configuração do sistema |
+| 👥 **Recursos Humanos** | Gestão dos funcionários e processos de RH |
+| 🏢 **Gestão** | Acompanhamento e aprovação de processos administrativos |
+| 💰 **Finanças** | Consulta e gestão das informações financeiras autorizadas |
+| 👤 **Funcionário** | Consulta das informações e utilização das funcionalidades disponibilizadas ao seu perfil |
 
-```text
-GET     /dashboard
-GET     /folha-pagamento
-POST    /processar-folha
-GET     /folha-detalhes/{id}
-POST    /folha-pagar
-POST    /folha-cancelar
-```
+As permissões específicas devem corresponder às regras de autorização implementadas no código.
 
 ---
 
-## 📚 Formações
+## 📌 Possíveis Melhorias Futuras
 
-```text
-/formacoes
-```
+Entre as possíveis evoluções do SIGRH encontram-se:
 
-Funcionalidades:
-
-```text
-GET     /
-POST    /
-POST    /excluir
-```
-
----
-
-## 🔔 Notificações
-
-```text
-/notificacoes
-```
-
-Funcionalidades:
-
-```text
-GET     /
-GET     /api
-POST    /marcar-lida
-POST    /marcar-todas
-```
+- 📱 Desenvolvimento de uma aplicação móvel Android.
+- 🔔 Implementação de notificações automáticas.
+- 📧 Envio de notificações por e-mail.
+- 📊 Dashboard com gráficos e indicadores de gestão.
+- 📄 Exportação de relatórios para PDF.
+- 📥 Exportação de dados para Excel.
+- 🔐 Reforço da recuperação de palavras-passe.
+- ☁️ Implantação em ambiente cloud.
+- 📅 Aperfeiçoamento da validação de datas e períodos administrativos.
+- 🏖️ Melhoria do controlo de férias acumuladas e transitadas.
+- 📈 Produção de estatísticas sobre funcionários, férias, formações e salários.
+- 🧾 Auditoria das operações realizadas pelos utilizadores.
 
 ---
 
-# 📡 API Endpoints
+## 👨‍💻 Autor
 
-## 🔔 Notificações
+### Renildo Cândido
 
-### Endpoint
+**Estudante de Informática | Java & Web Developer**
 
-```http
-GET /notificacoes/api
-```
-
-### Resposta
-
-```json
-[
-  {
-    "id": 1,
-    "titulo": "Novo Login",
-    "mensagem": "Login realizado com sucesso",
-    "tipo": "INFO",
-    "icone": "fa-info-circle",
-    "lida": false,
-    "dataCriacao": "2026-09-07 16:47:10"
-  }
-]
-```
+- **GitHub:** [Renildooficial](https://github.com/Renildooficial)
+- **LinkedIn:** [Renildo Cândido](https://www.linkedin.com/in/renildo-candido-2b8829413/)
 
 ---
 
-## 🔢 Contagem de Notificações
+## 📄 Licença
 
-```http
-GET /notificacoes/contar
-```
+Este projeto foi desenvolvido para fins **académicos e educacionais**.
 
-### Resposta
-
-```json
-{
-  "success": true,
-  "count": 3
-}
-```
-
----
-
-## 🏖️ Saldo de Férias
-
-```http
-GET /ferias/saldo?idFuncionario=1
-```
-
-### Resposta
-
-```json
-{
-  "success": true,
-  "saldo": 15
-}
-```
-
----
-
-# 📸 Screenshots
-
-> 🚧 **Em breve serão adicionadas imagens reais do sistema.**
-
-## 📊 Dashboard
-
-<img src="https://via.placeholder.com/900x450/2563EB/FFFFFF?text=Dashboard+SIGRH" alt="Dashboard SIGRH" width="100%"/>
-
-## 👥 Gestão de Funcionários
-
-<img src="https://via.placeholder.com/900x450/16A34A/FFFFFF?text=Gest%C3%A3o+de+Funcion%C3%A1rios" alt="Gestão de Funcionários" width="100%"/>
-
-## 🏖️ Gestão de Férias
-
-<img src="https://via.placeholder.com/900x450/F59E0B/FFFFFF?text=Gest%C3%A3o+de+F%C3%A9rias" alt="Gestão de Férias" width="100%"/>
-
-## 💰 Folha de Pagamento
-
-<img src="https://via.placeholder.com/900x450/DC2626/FFFFFF?text=Folha+de+Pagamento" alt="Folha de Pagamento" width="100%"/>
-
----
-
-# 🗺️ Roadmap
-
-* [x] Sistema de autenticação
-* [x] Gestão de funcionários
-* [x] Gestão de férias
-* [x] Gestão de formações
-* [x] Sistema de notificações
-* [x] Dashboard
-* [x] Controlo de permissões
-* [x] Auditoria
-* [ ] Exportação avançada para PDF
-* [ ] Exportação avançada para Excel
-* [ ] Melhorias no módulo financeiro
-* [ ] Notificações por e-mail
-* [ ] Melhorias na responsividade
-* [ ] API REST completa
-
----
-
-# 🤝 Contribuição
-
-Contribuições são bem-vindas! 🚀
-
-Para contribuir:
-
-### 1. Faça um Fork
-
-Crie uma cópia do projeto na sua conta.
-
-### 2. Crie uma Branch
-
-```bash
-git checkout -b feature/nova-feature
-```
-
-### 3. Faça as Alterações
-
-Implemente a nova funcionalidade.
-
-### 4. Faça o Commit
-
-```bash
-git commit -m "feat: adiciona nova funcionalidade"
-```
-
-### 5. Envie para o GitHub
-
-```bash
-git push origin feature/nova-feature
-```
-
-### 6. Abra um Pull Request
-
-Envie as suas alterações para análise.
-
----
-
-# 📄 Licença
-
-Este projeto está sob a licença **MIT**.
-
-Consulte o ficheiro:
-
-```text
-LICENSE
-```
-
-Para mais informações.
-
----
-
-# 👨‍💻 Desenvolvedor
-
-<div align="center">
-
-## Renildo Cândido
-
-💻 **Estudante de Licenciatura em Informática**
-🚀 **Java & Web Developer**
-🇲🇿 **Moçambique**
-
-<br>
-
-[![GitHub](https://img.shields.io/badge/GitHub-RenildoOficial-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/Renildooficial)
-
-</div>
-
----
-
-# 🙏 Agradecimentos
-
-Agradecimentos às tecnologias e ferramentas que tornam este projeto possível:
-
-* [Java](https://www.java.com/)
-* [Jakarta EE](https://jakarta.ee/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Font Awesome](https://fontawesome.com/)
-* [Chart.js](https://www.chartjs.org/)
-* [MySQL](https://www.mysql.com/)
-* [Apache Tomcat](https://tomcat.apache.org/)
-* [Maven](https://maven.apache.org/)
+A utilização, distribuição ou modificação do código deve respeitar a licença aplicável ao repositório.
 
 ---
 
 <div align="center">
 
-### ⭐ Se este projeto foi útil, considere deixar uma estrela!
+### 👥 SIGRH
 
-<br>
+**Sistema Integrado de Gestão de Recursos Humanos**
 
-**SIGRH — Sistema Integrado de Gestão de Recursos Humanos**
+Desenvolvido com Java, Jakarta EE, MySQL e tecnologias web.
 
-Feito com ❤️ e ☕ por **Renildo Cândido**
+<br />
 
-© 2026
+<img src="https://capsule-render.vercel.app/api?type=waving&color=005C84&height=120&section=footer" width="100%" alt="SIGRH Footer" />
 
 </div>
